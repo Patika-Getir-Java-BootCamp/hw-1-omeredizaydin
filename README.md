@@ -14,7 +14,7 @@ OOP is a programming paradigm that allows developer to organize software design 
 In OOP, interfaces and abstract classes are both used to define the structure of classes. However, they serve different purposes. In this regard, I would like to continue with a table that describes differences
 
 
-***Feature***					  ****Interface***				***Abstract Class***								                  
+***Feature***					  ***Interface***				***Abstract Class***								                  
 Method 
 Implementation			No implementation (except default methods in Java 8+)	Can have both abstract and concrete methods
 Inheritance			Multiple interfaces can be implemented			Can inherit only one abstract class
