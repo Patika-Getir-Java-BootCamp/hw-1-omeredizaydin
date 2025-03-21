@@ -86,7 +86,9 @@ It's a concept where an object’s state cannot be modified after it is created.
 There are so many places to use this one but the thing that I want to emphase that I mainly use it when I need to deep copy of an Entity. When we use Spring Data JPA, there can be error about entities' reference, by doing so, you can prevent this error and save your new entity with new reference to your db. (There are other methods in Entity Manager but I am speaking more abstraction level where you cannot have access to entity manager in case you use only spring data jpa interfaces out-of-box)
 
 Composition and Aggregation means and differences ?
+
 ***Composition :*** Composition is a stronger form of association where one object owns or controls the lifecycle of another object.
+
 ***Aggregation :*** Aggregation is a weaker form of association where one object is related to another, but there is no ownership. The whole object can exist independently of the part object.
 
 ***Feature***		  ***Composition***									***Aggregation***																		                          
@@ -100,9 +102,9 @@ Dependency	Strong dependency — part cannot exist without the whole.			Weaker d
 
 Those are fundamental concepts in software design that relates to how components or modules interact with each other within a system.
 ***Cohesion :***  it's a measure of how strongly the elements inside a module belong together. 
-***Coupling :***	it indicates how tightly one module is connected to another. Ideally, we want low coupling, where modules interact minimally with each other.
+***Coupling :***  it indicates how tightly one module is connected to another. Ideally, we want low coupling, where modules interact minimally with each other.
 
-Aspect		  Cohesion								Coupling																		                         
+***Aspect***	***Cohesion***								***Coupling***																                         
 Definition	Measures the internal consistency within a module or class.		Measures the dependence between different modules or classes.
 Goal		High cohesion is desired.						Low coupling is desired.							            Impact		High cohesion makes a module easier to maintain and understand.		Low coupling reduces the impact of changes and promotes reusability.
 Design 		Focuses on creating well-defined and focused modules.			Focuses on minimizing dependencies between modules.
